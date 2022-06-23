@@ -1,8 +1,8 @@
 {
   "name": "blogs-api",
   "version": "1.0.0",
-  "description": "<div align=\"center\">\r  <img src=\"./public/assets/images/banner.png\" alt=\"Ilustração de pessoas autoras de blogs escrevendo artigos\" width=\"1000\">\r </div>",
-  "main": "index.js",
+  "description": "Este projeto é uma API que se conecta a um banco de dados para a produção de conteúdo para um blog",
+  "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/brenndha-cabral/blogs-api.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Brenndha Cabral",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/brenndha-cabral/blogs-api/issues"
