@@ -17,10 +17,25 @@
 
 Foi desenvolvida uma API seguindo os princípios do REST e que conecta ao banco de dados `postgreSQL`.
 Para acessar a API, é necessário que a pessoa usuária faça login com suas credencias e isso será autenticado e autorizado via JWT com a geração de token.
-
+<br />
 <h2 id="tecnologias">Tecnologias</h2>
 
+<div>
+  <img title="JavaScript" alt="JavaScript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+  <img title="NodeJS" alt="NodeJS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
+  <img title="Docker" alt="Docker" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg">
+   <img title="PostgreSQL" alt="PostgreSQL" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg">
+</div>
+
 <h2 id="decisoes">Decisões</h2>
+
+ <img title="ESLint" alt="ESLint" height="20" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/eslint/eslint-original.svg"> [ESLint](https://eslint.org/)
+
+- O projeto possui regras estritas de ESLint (Airbnb) para JavaScript onde é possível encontrar e corrigir problemas, seguindo boas práticas e padronização.
+
+<img title="Sequelize" alt="Sequelize" height="20" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sequelize/sequelize-original.svg"> [Sequelize](https://sequelize.org/)
+
+- Como uma das bibliotecas de ORM mais conhecidas, o Sequelize foi utilizado nesse projeto pois o código se torna mais legível, extensível e de fácil manutenção.
 
 <h2 id="orientacoes">Orientações</h2>
 
@@ -109,12 +124,12 @@ Este projeto foi elaborado nos padrões da arquitetura MSC onde existem três ca
   
     _Retorna todos as pessoas usuárias cadastradas_
   
-  // Inserir imagem
+  // _Inserir imagem_
 
   - `http://localhost:3000/user/{id}`
   
     _Retorna a pessoa usuária cadastrada de acordo com seu id_
   
-  // Inserir imagem
+  // _Inserir imagem_
 
 </details>
