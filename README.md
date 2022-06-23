@@ -1,5 +1,5 @@
 # Projeto API de Blogs :black_nib:
-
+<br />
 <div align="center">
  <img src="./public/assets/images/banner.png" alt="Ilustração de pessoas autoras de blogs escrevendo artigos" width="1000">
 </div>
