@@ -1,13 +1,17 @@
 # Projeto API de Blogs :black_nib:
 
+<div align="center">
+ <img src="./public/assets/images/banner.png" alt="Ilustração de pessoas autoras de blogs escrevendo artigos" width="1000">
+</div>
+
 <h2>Índice</h2>
 
  :round_pushpin: [Sobre](#sobre)<br />
  :round_pushpin: [Tecnologias](#tecnologias)<br />
  :round_pushpin: [Decisões](#decisoes)<br />
- :round_pushpin: [Orientações](#orientacoes)<br />
  :round_pushpin: [Diagrama de Entidade-Relacionamento](#dre)<br />
  :round_pushpin: [Arquitetura de Software](#arquitetura)<br />
+ :round_pushpin: [Orientações](#orientacoes)<br />
  :round_pushpin: [Clientes](#cliente)<br />
  :round_pushpin: [Rotas](#rotas)<br />
  
@@ -47,6 +51,24 @@ Para acessar a API, é necessário que a pessoa usuária faça login com suas cr
 <img title="JWT" alt="JWT" height="15" width="15" src="./public/assets/images/jwt.png"> [JWT](https://jwt.io/)
 
 - Os JSON Web Tokens representam a autenticação e autorização de forma eficaz e simples.
+
+
+<h2 id="dre">Diagrama de Entidade-Relacionamento</h2>
+
+<img src="./public/assets/images/der.png"/>
+
+<h2 id="arquitetura">Arquitetura de Software</h2>
+
+Este projeto foi elaborado nos padrões da arquitetura MSC onde existem três camadas:
+
+- **Camada de Modelo (M)**: Arquivos que executam as operações do banco de dados, como criar conexões e executar queries;
+
+- **Camada de Serviço (S)**: Arquivos que estruturam as regras de negócio, geralmente é quem chama os métodos definidos na camada de modelo;
+
+- **Camada de Controladores (C)**: Interface mais próxima da pessoa usuária ou de uma requisição, irá processar e chamar as devidas funções da camada de serviço.
+
+
+<img src="./public/assets/images/msc-software-architecture.png"/><br /><br />
 
 <h2 id="orientacoes">Orientações</h2>
 
@@ -92,23 +114,6 @@ Para acessar a API, é necessário que a pessoa usuária faça login com suas cr
 
 </details>
 
-
-<h2 id="dre">Diagrama de Entidade-Relacionamento</h2>
-
-<img src="./public/assets/images/der.png"/>
-
-<h2 id="arquitetura">Arquitetura de Software</h2>
-
-Este projeto foi elaborado nos padrões da arquitetura MSC onde existem três camadas:
-
-- **Camada de Modelo (M)**: Arquivos que executam as operações do banco de dados, como criar conexões e executar queries;
-
-- **Camada de Serviço (S)**: Arquivos que estruturam as regras de negócio, geralmente é quem chama os métodos definidos na camada de modelo;
-
-- **Camada de Controladores (C)**: Interface mais próxima da pessoa usuária ou de uma requisição, irá processar e chamar as devidas funções da camada de serviço.
-
-
-<img src="./public/assets/images/msc-software-architecture.png"/>
 
 <h2 id="cliente">Clientes</h2>
 
@@ -170,6 +175,8 @@ Este projeto foi elaborado nos padrões da arquitetura MSC onde existem três ca
       </details>
  
  <hr />
+ 
+   // _Inserir conteúdo_
   
   <details>
 
