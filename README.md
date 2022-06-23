@@ -31,6 +31,27 @@ Para acessar a API, é necessário que a pessoa usuária faça login com suas cr
 
 - `npm install`: Irá instalar todas as dependências;
 
-- `npm start`: Irá rodar a aplicação na porta `3000` pelo `nodemon`, ou adapte o docker-compose caso sinta necessidade.
+- `npm start`: Irá rodar a aplicação na porta `3000` pelo `nodemon`, ou adapte o docker-compose e o `.env` caso sinta necessidade.
+
+
+### 👉 Sem Docker
+
+> :information_source: Instale as dependências com `npm install`.
+
+> :information_source: Rode a aplicação com `npm start` na porta `3000` pelo `nodemon`, ou adapte o `.env` caso sinta necessidade.
 
 </details>
+
+## Cliente
+
+> :information_source: Após rodar a aplicação, você deverá acessar através de `http://localhost:{porta}/{rota}`
+
+- Algumas sugestões de clientes:
+
+  :pushpin: [HTTPie](https://httpie.io/)
+
+  :pushpin: [Postman](https://www.postman.com/)
+
+  :pushpin: [Insomnia](https://insomnia.rest/)
+
+  :pushpin: [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
