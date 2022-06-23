@@ -20,7 +20,7 @@ Para acessar a API, é necessário que a pessoa usuária faça login com suas cr
 
 <details>
 
-<summary><strong>:whale2: Rodando com Docker x Localmente</strong></summary><br/>
+<summary><strong>:whale2: Rodando com Docker x Localmente</strong></summary>
 
 ### 👉 Com Docker
 
@@ -66,7 +66,7 @@ Para acessar a API, é necessário que a pessoa usuária faça login com suas cr
   :pushpin: [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
   
 
-## Diagrama de Entidade-Relacionamento e Entidades
+## Diagrama de Entidade-Relacionamento
 
 <img src="./public/assets/images/der.png"/>
 
@@ -74,9 +74,9 @@ Para acessar a API, é necessário que a pessoa usuária faça login com suas cr
 
 Este projeto foi elaborado nos padrões da arquitetura MSC onde existem três camadas:
 
-- **Camada de Modelo (M)**: Arquivos onde iremos executar as operações do banco de dados, como criar conexões e executar queries;
+- **Camada de Modelo (M)**: Arquivos que executam as operações do banco de dados, como criar conexões e executar queries;
 
-- **Camada de Serviço (S)**: Arquivos onde iremos estruturar nossas regras de negócio, geralmente é quem chama os métodos definidos na camada de modelo;
+- **Camada de Serviço (S)**: Arquivos que estruturam as regras de negócio, geralmente é quem chama os métodos definidos na camada de modelo;
 
 - **Camada de Controladores (C)**: Interface mais próxima da pessoa usuária ou de uma requisição, irá processar e chamar as devidas funções da camada de serviço.
 
@@ -87,7 +87,7 @@ Este projeto foi elaborado nos padrões da arquitetura MSC onde existem três ca
 
 <details>
 
-<summary><strong>:triangular_flag_on_post: Rotas GET</strong></summary><br/>
+<summary><strong>:triangular_flag_on_post: Rotas GET</strong></summary>
   
   - `http://localhost:3000/user`
   
