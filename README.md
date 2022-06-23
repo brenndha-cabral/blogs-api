@@ -11,6 +11,15 @@ Para acessar a API, é necessário que a pessoa usuária faça login com suas cr
 
 <details>
 
+<summary><strong>:closed_lock_with_key: Arquivos example.env e .env</strong></summary><br/>
+  
+> :information_source: Você encontrará um arquivo `example.env` onde estarão as variáveis de ambiente utilizadas no projeto, duplique-o e renomeie-o apenas para `.env` e insira os valores nas variáveis de ambiente conforme sua utilização.
+<br />
+  
+</details>
+
+<details>
+
 <summary><strong>:whale2: Rodando com Docker x Localmente</strong></summary><br/>
 
 ### 👉 Com Docker
@@ -63,7 +72,7 @@ Para acessar a API, é necessário que a pessoa usuária faça login com suas cr
 
 ## Arquitetura de Software
 
-Este projeto foi elaborado nos padrões da arquiterua MSC onde existem três camadas:
+Este projeto foi elaborado nos padrões da arquitetura MSC onde existem três camadas:
 
 - **Camada de Modelo (M)**: Arquivos onde iremos executar as operações do banco de dados, como criar conexões e executar queries;
 
@@ -75,3 +84,17 @@ Este projeto foi elaborado nos padrões da arquiterua MSC onde existem três cam
 <img src="./public/assets/images/msc-software-architecture.png"/>
 
 ## Exemplos
+
+<details>
+
+<summary><strong>:triangular_flag_on_post: Rotas GET</strong></summary><br/>
+  
+  - `http://localhost:3000/user`
+  
+    _Retorna todos as pessoas usuárias cadastradas_
+
+  - `http://localhost:3000/user/{id}`
+  
+    _Retorna a pessoa usuária cadastrada de acordo com seu id_
+
+</details>
