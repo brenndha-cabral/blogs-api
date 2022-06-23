@@ -92,9 +92,13 @@ Este projeto foi elaborado nos padrões da arquitetura MSC onde existem três ca
   - `http://localhost:3000/user`
   
     _Retorna todos as pessoas usuárias cadastradas_
+  
+  // Inserir imagem
 
   - `http://localhost:3000/user/{id}`
   
     _Retorna a pessoa usuária cadastrada de acordo com seu id_
+  
+  // Inserir imagem
 
 </details>
