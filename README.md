@@ -1,19 +1,26 @@
 # Projeto API de Blogs :black_nib:
 
-<h2>Sobre</h2>
+<h2>Índice</h2>
+
+ :round_pushpin: [Sobre](#sobre)<br />
+ :round_pushpin: [Tecnologias](#tecnologias)<br />
+ :round_pushpin: [Decisões](#decisoes)<br />
+ :round_pushpin: [Orientações](#orientacoes)<br />
+ :round_pushpin: [Diagrama de Entidade-Relacionamento](#dre)<br />
+ :round_pushpin: [Arquitetura de Software](#arquitetura)<br />
+ :round_pushpin: [Clientes](#cliente)<br />
+ :round_pushpin: [Exemplos](#exemplos)<br />
+ 
+<h2 id="sobre">Sobre</h2>
 
 #### Este projeto é uma aplicação em `Node.js` usando o pacote `sequelize` para fazer um CRUD de posts :page_with_curl:
 
 Foi desenvolvida uma API seguindo os princípios do REST e que conecta ao banco de dados `postgreSQL`.
 Para acessar a API, é necessário que a pessoa usuária faça login com suas credencias e isso será autenticado e autorizado via JWT com a geração de token.
 
-<h2>Índice</h2>
+<h2 id="tecnologias">Tecnologias</h2>
 
- :round_pushpin: [Orientações](#orientacoes)<br />
- :round_pushpin: [Clientes](#cliente)<br />
- :round_pushpin: [Diagrama de Entidade-Relacionamento](#dre)<br />
- :round_pushpin: [Arquitetura de Software](#arquitetura)<br />
- :round_pushpin: [Exemplos](#exemplos)<br />
+<h2 id="decisoes">Decisões</h2>
 
 <h2 id="orientacoes">Orientações</h2>
 
@@ -59,20 +66,6 @@ Para acessar a API, é necessário que a pessoa usuária faça login com suas cr
 
 </details>
 
-<h2 id="cliente">Clientes</h2>
-
-> :information_source: Após rodar a aplicação, você deverá acessar através de `http://localhost:{porta}/{rota}`
-
-- Algumas sugestões de clientes:
-
-  :pushpin: [HTTPie](https://httpie.io/)
-
-  :pushpin: [Postman](https://www.postman.com/)
-
-  :pushpin: [Insomnia](https://insomnia.rest/)
-
-  :pushpin: [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
-  
 
 <h2 id="dre">Diagrama de Entidade-Relacionamento</h2>
 
@@ -90,6 +83,21 @@ Este projeto foi elaborado nos padrões da arquitetura MSC onde existem três ca
 
 
 <img src="./public/assets/images/msc-software-architecture.png"/>
+
+<h2 id="cliente">Clientes</h2>
+
+> :information_source: Após rodar a aplicação, você deverá acessar através de `http://localhost:{porta}/{rota}`
+
+- Algumas sugestões de clientes:
+
+  :pushpin: [HTTPie](https://httpie.io/)
+
+  :pushpin: [Postman](https://www.postman.com/)
+
+  :pushpin: [Insomnia](https://insomnia.rest/)
+
+  :pushpin: [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
+  
 
 <h2 id="exemplos">Exemplos</h2>
 
