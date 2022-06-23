@@ -23,8 +23,8 @@ Para acessar a API, é necessário que a pessoa usuária faça login com suas cr
 <div>
   <img title="JavaScript" alt="JavaScript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
   <img title="NodeJS" alt="NodeJS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
+  <img title="Nodemon" alt="Nodemon" height="30" width="30" src="./public/assets/images/nodemon.png">
   <img title="Express" alt="Express" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg">
-  <img title="Nodemon" alt="Nodemon" height="30" width="40" src="./public/assets/images/nodemon.png">
   <img title="JWT" alt="JWT" height="30" width="30" src="./public/assets/images/jwt.png">
   <img title="Docker" alt="Docker" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg">
    <img title="PostgreSQL" alt="PostgreSQL" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg">
@@ -44,9 +44,9 @@ Para acessar a API, é necessário que a pessoa usuária faça login com suas cr
 
 - Como uma das bibliotecas de ORM mais conhecidas, o Sequelize foi utilizado nesse projeto pois o código se torna mais legível, extensível e de fácil manutenção.
 
-<img title="JWT" alt="JWT" height="20" width="20" src="./public/assets/images/jwt.png"> [JWT](https://jwt.io/)
+<img title="JWT" alt="JWT" height="15" width="15" src="./public/assets/images/jwt.png"> [JWT](https://jwt.io/)
 
-- Os JSON Web Tokens representam de forma segura entre duas partes, autenticação e autorização de forma eficaz e simples.
+- Os JSON Web Tokens representam a autenticação e autorização de forma eficaz e simples.
 
 <h2 id="orientacoes">Orientações</h2>
 
