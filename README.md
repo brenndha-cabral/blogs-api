@@ -9,7 +9,7 @@
  :round_pushpin: [Diagrama de Entidade-Relacionamento](#dre)<br />
  :round_pushpin: [Arquitetura de Software](#arquitetura)<br />
  :round_pushpin: [Clientes](#cliente)<br />
- :round_pushpin: [Exemplos](#exemplos)<br />
+ :round_pushpin: [Rotas](#rotas)<br />
  
 <h2 id="sobre">Sobre</h2>
 
@@ -116,16 +116,10 @@ Este projeto foi elaborado nos padrões da arquitetura MSC onde existem três ca
 
 - Algumas sugestões de clientes:
 
-  :pushpin: [HTTPie](https://httpie.io/)
+  :bulb: [HTTPie](https://httpie.io/) | :bulb: [Postman](https://www.postman.com/) | :bulb: [Insomnia](https://insomnia.rest/) | :bulb: [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
 
-  :pushpin: [Postman](https://www.postman.com/)
 
-  :pushpin: [Insomnia](https://insomnia.rest/)
-
-  :pushpin: [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
-  
-
-<h2 id="exemplos">Exemplos</h2>
+<h2 id="rotas">Rotas</h2>
 
 <details>
 
@@ -133,14 +127,80 @@ Este projeto foi elaborado nos padrões da arquitetura MSC onde existem três ca
   
   - `http://localhost:3000/user`
   
-    _Retorna todos as pessoas usuárias cadastradas_
-  
-  // _Inserir imagem_
+    Retorna com sucesso todas as pessoas usuárias cadastradas no banco de dados, com um status http `200`.
+ 
+      <details>
+       
+       <summary><h5>:green_circle: Retorno esperado</h5></summary>
+
+     ```json
+     [
+       {
+           "id": 1,
+           "displayName": "Lewis Hamilton",
+           "email": "lewishamilton@gmail.com",
+           "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Lewis_Hamilton_2016_Malaysia_2.jpg"
+       },
+
+       /* ... */
+     ]
+     ```
+
+      </details>
+ 
+ <hr />
 
   - `http://localhost:3000/user/{id}`
   
-    _Retorna a pessoa usuária cadastrada de acordo com seu id_
+    Retorna com sucesso a pessoa usuária cadastrada no banco de dados pelo `id`, com um status http `200`.
+ 
+       <details>
+       
+       <summary><h5>:green_circle: Retorno esperado</h5></summary>
+
+     ```json
+     {
+       "id": 1,
+       "displayName": "Lewis Hamilton",
+       "email": "lewishamilton@gmail.com",
+       "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Lewis_Hamilton_2016_Malaysia_2.jpg"
+     }
+     ```
+
+      </details>
+ 
+ <hr />
   
-  // _Inserir imagem_
+  <details>
+
+  <summary><strong>:triangular_flag_on_post: Rotas PUT</strong></summary>
+
+    // _Inserir conteúdo_
+
+  </details>
+
+</details>
+
+<details>
+
+<summary><strong>:triangular_flag_on_post: Rotas POST</strong></summary>
+  
+ // _Inserir conteúdo_
+
+</details>
+
+<details>
+
+<summary><strong>:triangular_flag_on_post: Rotas PUT</strong></summary>
+  
+  // _Inserir conteúdo_
+
+</details>
+
+<details>
+
+<summary><strong>:triangular_flag_on_post: Rotas DELETE</strong></summary>
+  
+  // _Inserir conteúdo_
 
 </details>
