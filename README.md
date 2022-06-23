@@ -1,17 +1,25 @@
 # Projeto API de Blogs :black_nib:
 
-## Sobre
+<h2>Sobre</h2>
 
 #### Este projeto é uma aplicação em `Node.js` usando o pacote `sequelize` para fazer um CRUD de posts :page_with_curl:
 
 Foi desenvolvida uma API seguindo os princípios do REST e que conecta ao banco de dados `postgreSQL`.
 Para acessar a API, é necessário que a pessoa usuária faça login com suas credencias e isso será autenticado e autorizado via JWT com a geração de token.
 
-## Orientações
+<h2>Índice</h2>
+
+ :round_pushpin: [Orientações](#orientacoes)<br />
+ :round_pushpin: [Clientes](#cliente)<br />
+ :round_pushpin: [Diagrama de Entidade-Relacionamento](#dre)<br />
+ :round_pushpin: [Arquitetura de Software](#arquitetura)<br />
+ :round_pushpin: [Exemplos](#exemplos)<br />
+
+<h2 id="orientacoes">Orientações</h2>
 
 <details>
 
-<summary><strong>:closed_lock_with_key: Arquivos example.env e .env</strong></summary><br/>
+<summary id="env"><strong>:closed_lock_with_key: Arquivos example.env e .env</strong></summary><br/>
   
 > :information_source: Você encontrará um arquivo `example.env` onde estarão as variáveis de ambiente utilizadas no projeto, duplique-o e renomeie-o apenas para `.env` e insira os valores nas variáveis de ambiente conforme sua utilização.
 <br />
@@ -20,7 +28,7 @@ Para acessar a API, é necessário que a pessoa usuária faça login com suas cr
 
 <details>
 
-<summary><strong>:whale2: Rodando com Docker x Localmente</strong></summary>
+<summary id="docker"><strong>:whale2: Rodando com Docker x Localmente</strong></summary>
 
 ### 👉 Com Docker
 
@@ -51,7 +59,7 @@ Para acessar a API, é necessário que a pessoa usuária faça login com suas cr
 
 </details>
 
-## Cliente
+<h2 id="cliente">Clientes</h2>
 
 > :information_source: Após rodar a aplicação, você deverá acessar através de `http://localhost:{porta}/{rota}`
 
@@ -66,11 +74,11 @@ Para acessar a API, é necessário que a pessoa usuária faça login com suas cr
   :pushpin: [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
   
 
-## Diagrama de Entidade-Relacionamento
+<h2 id="dre">Diagrama de Entidade-Relacionamento</h2>
 
 <img src="./public/assets/images/der.png"/>
 
-## Arquitetura de Software
+<h2 id="arquitetura">Arquitetura de Software</h2>
 
 Este projeto foi elaborado nos padrões da arquitetura MSC onde existem três camadas:
 
@@ -83,7 +91,7 @@ Este projeto foi elaborado nos padrões da arquitetura MSC onde existem três ca
 
 <img src="./public/assets/images/msc-software-architecture.png"/>
 
-## Exemplos
+<h2 id="exemplos">Exemplos</h2>
 
 <details>
 
