@@ -1,0 +1,20 @@
+{
+  "name": "blogs-api",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">\r  <img src=\"./public/assets/images/banner.png\" alt=\"Ilustração de pessoas autoras de blogs escrevendo artigos\" width=\"1000\">\r </div>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brenndha-cabral/blogs-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brenndha-cabral/blogs-api/issues"
+  },
+  "homepage": "https://github.com/brenndha-cabral/blogs-api#readme"
+}
