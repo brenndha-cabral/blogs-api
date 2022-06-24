@@ -11,7 +11,7 @@
  :round_pushpin: [Decisões](#decisoes)<br />
  :round_pushpin: [Orientações](#orientacoes)<br />
  :round_pushpin: [Clientes](#cliente)<br />
- :round_pushpin: [Documentação](https://github.com/brenndha-cabral/blogs-api/wiki)<br />
+ :round_pushpin: [Documentação](#documentacao)<br />
  
 <h2 id="sobre">Sobre</h2>
 
@@ -100,11 +100,15 @@ A [documentação](https://github.com/brenndha-cabral/blogs-api/wiki) te ajudar�
 
 <h2 id="cliente">Clientes</h2>
 
-> :information_source: Após rodar a aplicação, você deverá acessar através de `http://localhost:{porta}/{rota}`
+_Obs: Veja a seção de [documentação](#documentacao) para entender melhor como funcionam as rotas._
+
+> :information_source: Após rodar a aplicação, você deverá acessar através de `http://localhost:{porta}/{rota}` 
 
 - Algumas sugestões de clientes:
 
   :bulb: [HTTPie](https://httpie.io/) | :bulb: [Postman](https://www.postman.com/) | :bulb: [Insomnia](https://insomnia.rest/) | :bulb: [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
 
 
-</details>
+<h2 id="documentacao">Documentação</h2>
+
+> :information_source: Acesse [aqui](https://github.com/brenndha-cabral/blogs-api/wiki) a documentação deste projeto onde constam mais detalhes sobre os relacionamentos e entidades elaborados, arquitetura de software utilizada e as rotas possíveis para consumo.
