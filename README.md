@@ -1,19 +1,17 @@
 # Projeto API de Blogs :black_nib:
-<br />
-<div align="center">
+<!-- <br /> -->
+<!-- <div align="center">
  <img src="./public/assets/images/banner.png" alt="Ilustração de pessoas autoras de blogs escrevendo artigos" width="1000">
-</div>
+</div> -->
 
 <h2>Índice</h2>
 
  :round_pushpin: [Sobre](#sobre)<br />
  :round_pushpin: [Tecnologias](#tecnologias)<br />
  :round_pushpin: [Decisões](#decisoes)<br />
- :round_pushpin: [Diagrama de Entidade-Relacionamento](#dre)<br />
- :round_pushpin: [Arquitetura de Software](#arquitetura)<br />
  :round_pushpin: [Orientações](#orientacoes)<br />
  :round_pushpin: [Clientes](#cliente)<br />
- :round_pushpin: [Rotas](#rotas)<br />
+ :round_pushpin: [Documentação](https://github.com/brenndha-cabral/blogs-api/wiki)<br />
  
 <h2 id="sobre">Sobre</h2>
 
@@ -21,6 +19,8 @@
 
 Foi desenvolvida uma API seguindo os princípios do REST e que conecta ao banco de dados `postgreSQL`.
 Para acessar a API, é necessário que a pessoa usuária faça login com suas credencias e isso será autenticado e autorizado via JWT com a geração de token.
+
+A [documentação](https://github.com/brenndha-cabral/blogs-api/wiki) te ajudará a entender o projeto com maior clareza e assertividade :book:
 <br />
 <h2 id="tecnologias">Tecnologias</h2>
 
@@ -52,23 +52,6 @@ Para acessar a API, é necessário que a pessoa usuária faça login com suas cr
 
 - Os JSON Web Tokens representam a autenticação e autorização de forma eficaz e simples.
 
-
-<h2 id="dre">Diagrama de Entidade-Relacionamento</h2>
-
-<img src="./public/assets/images/der.png"/>
-
-<h2 id="arquitetura">Arquitetura de Software</h2>
-
-Este projeto foi elaborado nos padrões da arquitetura MSC onde existem três camadas:
-
-- **Camada de Modelo (M)**: Arquivos que executam as operações do banco de dados, como criar conexões e executar queries;
-
-- **Camada de Serviço (S)**: Arquivos que estruturam as regras de negócio, geralmente é quem chama os métodos definidos na camada de modelo;
-
-- **Camada de Controladores (C)**: Interface mais próxima da pessoa usuária ou de uma requisição, irá processar e chamar as devidas funções da camada de serviço.
-
-
-<img src="./public/assets/images/msc-software-architecture.png"/><br /><br />
 
 <h2 id="orientacoes">Orientações</h2>
 
@@ -123,91 +106,5 @@ Este projeto foi elaborado nos padrões da arquitetura MSC onde existem três ca
 
   :bulb: [HTTPie](https://httpie.io/) | :bulb: [Postman](https://www.postman.com/) | :bulb: [Insomnia](https://insomnia.rest/) | :bulb: [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
 
-
-<h2 id="rotas">Rotas</h2>
-
-<details>
-
-<summary><strong>:triangular_flag_on_post: Rotas GET</strong></summary>
-  
-  - `http://localhost:3000/user`
-  
-    Retorna com sucesso todas as pessoas usuárias cadastradas no banco de dados, com um status http `200`.
- 
-      <details>
-       
-       <summary><h5>:green_circle: Retorno esperado</h5></summary>
-
-     ```json
-     [
-       {
-           "id": 1,
-           "displayName": "Lewis Hamilton",
-           "email": "lewishamilton@gmail.com",
-           "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Lewis_Hamilton_2016_Malaysia_2.jpg"
-       },
-
-       /* ... */
-     ]
-     ```
-
-      </details>
- 
- <hr />
-
-  - `http://localhost:3000/user/{id}`
-  
-    Retorna com sucesso a pessoa usuária cadastrada no banco de dados pelo `id`, com um status http `200`.
- 
-       <details>
-       
-       <summary><h5>:green_circle: Retorno esperado</h5></summary>
-
-     ```json
-     {
-       "id": 1,
-       "displayName": "Lewis Hamilton",
-       "email": "lewishamilton@gmail.com",
-       "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Lewis_Hamilton_2016_Malaysia_2.jpg"
-     }
-     ```
-
-      </details>
- 
- <hr />
- 
-   // _Inserir conteúdo_
-  
-  <details>
-
-  <summary><strong>:triangular_flag_on_post: Rotas PUT</strong></summary>
-
-    // _Inserir conteúdo_
-
-  </details>
-
-</details>
-
-<details>
-
-<summary><strong>:triangular_flag_on_post: Rotas POST</strong></summary>
-  
- // _Inserir conteúdo_
-
-</details>
-
-<details>
-
-<summary><strong>:triangular_flag_on_post: Rotas PUT</strong></summary>
-  
-  // _Inserir conteúdo_
-
-</details>
-
-<details>
-
-<summary><strong>:triangular_flag_on_post: Rotas DELETE</strong></summary>
-  
-  // _Inserir conteúdo_
 
 </details>
