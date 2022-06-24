@@ -10,7 +10,7 @@ services:
     container_name: blogs_api
     tty: true
     stdin_open: true
-    command: bash
+    command: bash -c "npm install && npm start"
     depends_on:
       - db
     ports:
