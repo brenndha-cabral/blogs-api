@@ -1,7 +1,7 @@
 # Projeto API de Blogs :black_nib:
 
 <div align="center">
- <img src="./public/assets/images/banner-readme.png" alt="Ilustração de pessoas autoras de blogs escrevendo artigos" width="1000">
+ <img src="./public/assets/images/readme-banner.png" alt="Ilustração de pessoas autoras de blogs escrevendo artigos" width="1000">
 </div>
 
 <h2>Índice</h2>
