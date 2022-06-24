@@ -10,16 +10,16 @@ services:
     container_name: blogs_api
     tty: true
     stdin_open: true
-    command: bash -c "npm install && npm start"
+    command: bash
     depends_on:
       - db
     ports:
       - 3000:3000
     environment:
-      DATABASE_USER: root
-      DATABASE_PASSWORD: password
       DATABASE_HOST: db
-      JWT_SECRET: segredinho
+      DATABASE_USER: "${DATABASE_USER}"
+      DATABASE_PASSWORD: "${DATABASE_PASSWORD}"
+      JWT_SECRET: "${JWT_SECRET}"
 
   db:
     container_name: blogs_api_db
@@ -27,5 +27,5 @@ services:
     ports:
       - 5432:5432
     environment:
-      POSTGRES_PASSWORD: password
-      TZ: America/Sao_Paulo
+      POSTGRES_PASSWORD: "${DATABASE_PASSWORD}"
+      TZ: "${TIMEZONE}"
