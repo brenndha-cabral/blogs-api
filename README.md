@@ -20,7 +20,7 @@
 Foi desenvolvida uma API seguindo os princípios do REST e que conecta ao banco de dados `postgreSQL`.
 Para acessar a API, é necessário que a pessoa usuária faça login com suas credencias e isso será autenticado e autorizado via JWT com a geração de token.
 
-A [documentação](https://github.com/brenndha-cabral/blogs-api/wiki) te ajudará a entender o projeto com maior clareza e assertividade :book:
+A [documentação](#documentacao) te ajudará a entender o projeto com maior clareza e assertividade :book:
 <br />
 <h2 id="tecnologias">Tecnologias</h2>
 
