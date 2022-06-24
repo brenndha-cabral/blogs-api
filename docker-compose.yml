@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+
+  node:
+    image: node
+    working_dir: /app
+    volumes:
+      - ./:/app
+    container_name: blogs_api
+    tty: true
+    stdin_open: true
+    command: bash npm install npm start
+    depends_on:
+      - db
+    ports:
+      - 3000:3000
+    environment:
+      DATABASE_USER: root
+      DATABASE_PASSWORD: password
+      DATABASE_HOST: db
+      JWT_SECRET: segredinho
+
+  db:
+    container_name: blogs_api_db
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      DATABASE_PASSWORD: password
