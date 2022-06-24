@@ -3,14 +3,14 @@ version: "3"
 services:
 
   node:
-    image: node
+    image: node:16
     working_dir: /app
     volumes:
       - ./:/app
     container_name: blogs_api
     tty: true
     stdin_open: true
-    command: bash npm install npm start
+    command: bash -c "npm install && npm start"
     depends_on:
       - db
     ports:
@@ -27,4 +27,5 @@ services:
     ports:
       - 5432:5432
     environment:
-      DATABASE_PASSWORD: password
+      POSTGRES_PASSWORD: password
+      TZ: America/Sao_Paulo
