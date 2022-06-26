@@ -18,6 +18,21 @@ const newUserController = async (req, res) => {
   }
 };
 
+const getAllUsersController = async (req, res) => {
+  try {
+    const users = await userService.getAllUsers();
+
+    if (!users) {
+      return res.status(404).json({ message: 'Pessoas usuárias não encontradas.' });
+    }
+
+    return res.status(200).json(users);
+  } catch (error) {
+    return res.status(500).json(error.message);
+  }
+};
+
 module.exports = {
   newUserController,
+  getAllUsersController,
 };
