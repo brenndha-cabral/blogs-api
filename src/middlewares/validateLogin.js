@@ -1,18 +1,15 @@
 const { check, validationResult } = require('express-validator');
 const { User } = require('../database/models');
 
-const validateFieldsLogin = (req, res, next) => {
-  const { email, password } = req.body;
-
-  check(email)
+const validateFieldsLogin = [
+  check('email')
     .isEmail()
-    .withMessage('Email inválido. Por favor, insira um email válido.');
-
-  check(password)
-    .isEmpty()
+    .withMessage('Email inválido. Por favor, insira um email válido.'),
+  check('password')
     .isLength({ min: 6 })
-    .withMessage('Senha incorreta. Por favor, insira uma senha válida.');
-
+    .withMessage('Senha incorreta. Por favor, insira uma senha válida.'),
+];
+const validateRules = (req, res, next) => {
   const errors = validationResult(req);
 
   if (!errors.isEmpty()) {
@@ -41,5 +38,6 @@ const validateUserExist = async (req, res, next) => {
 
 module.exports = {
   validateFieldsLogin,
+  validateRules,
   validateUserExist,
 };
