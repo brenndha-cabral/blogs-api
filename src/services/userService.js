@@ -23,7 +23,12 @@ const setNewUserAndGenerateToken = async (
   return { token };
 };
 
+const getAllUsers = () => User.findAll({
+  attributes: { exclude: ['password'] },
+});
+
 module.exports = {
   getUser,
   setNewUserAndGenerateToken,
+  getAllUsers,
 };
