@@ -9,7 +9,7 @@ const validateFieldsLogin = [
     .isLength({ min: 6 })
     .withMessage('Senha incorreta. Por favor, insira uma senha válida.'),
 ];
-const validateRules = (req, res, next) => {
+const validateRulesLogin = (req, res, next) => {
   const errors = validationResult(req);
 
   if (!errors.isEmpty()) {
@@ -38,6 +38,6 @@ const validateUserExist = async (req, res, next) => {
 
 module.exports = {
   validateFieldsLogin,
-  validateRules,
+  validateRulesLogin,
   validateUserExist,
 };

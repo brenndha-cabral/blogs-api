@@ -4,12 +4,12 @@ const router = express.Router();
 
 const {
   validateFieldsLogin,
-  validateRules,
+  validateRulesLogin,
   validateUserExist,
 } = require('../middlewares/validateLogin');
 
 const { loginController } = require('../controllers/loginController');
 
-router.post('/', validateFieldsLogin, validateRules, validateUserExist, loginController);
+router.post('/', validateFieldsLogin, validateRulesLogin, validateUserExist, loginController);
 
 module.exports = router;
