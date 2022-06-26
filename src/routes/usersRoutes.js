@@ -11,10 +11,11 @@ const { validateToken } = require('../middlewares/validateToken');
 const {
   newUserController,
   getAllUsersController,
+  getUserByIdController,
 } = require('../controllers/userController');
 
 router.post('/', validateFieldsUser, validateRulesUser, newUserController);
-// router.get('/:id', validateToken, getUserByIdController);
+router.get('/:id', validateToken, getUserByIdController);
 router.get('/', validateToken, getAllUsersController);
 // router.delete('/me', validateToken, deleteUserController);
 
