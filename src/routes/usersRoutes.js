@@ -12,11 +12,12 @@ const {
   newUserController,
   getAllUsersController,
   getUserByIdController,
+  deleteUserController,
 } = require('../controllers/userController');
 
 router.post('/', validateFieldsUser, validateRulesUser, newUserController);
 router.get('/:id', validateToken, getUserByIdController);
 router.get('/', validateToken, getAllUsersController);
-// router.delete('/me', validateToken, deleteUserController);
+router.delete('/me', validateToken, deleteUserController);
 
 module.exports = router;
