@@ -10,7 +10,7 @@
  :round_pushpin: [Tecnologias](#tecnologias)<br />
  :round_pushpin: [Decisões](#decisoes)<br />
  :round_pushpin: [Orientações](#orientacoes)<br />
- :round_pushpin: [Clientes](#cliente)<br />
+ :round_pushpin: [Usabilidade](#usabilidade)<br />
  :round_pushpin: [Documentação](#documentacao)<br />
  
 <h2 id="sobre">Sobre</h2>
@@ -98,7 +98,7 @@ A [documentação](#documentacao) te ajudará a entender o projeto com maior cla
 </details>
 
 
-<h2 id="cliente">Clientes</h2>
+<h2 id="usabilidade">Usabilidade</h2>
 
 _Obs: Veja a seção de [documentação](#documentacao) para entender melhor como funcionam as rotas._
 
