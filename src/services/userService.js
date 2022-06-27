@@ -27,7 +27,7 @@ const getAllUsers = () => User.findAll({
   attributes: { exclude: ['password'] },
 });
 
-const userById = async (id) => {
+const getUserById = async (id) => {
   const response = await User.findOne({
     attributes: { exclude: ['password'] },
     where: { id },
@@ -36,9 +36,18 @@ const userById = async (id) => {
   return response;
 };
 
+const removeUser = async (email) => {
+  const response = await User.destroy({
+    where: { email },
+  });
+
+  return response > 0;
+};
+
 module.exports = {
   getUser,
   setNewUserAndGenerateToken,
   getAllUsers,
-  userById,
+  getUserById,
+  removeUser,
 };
