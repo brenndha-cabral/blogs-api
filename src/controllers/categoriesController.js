@@ -14,6 +14,19 @@ const getAllCategoriesController = async (req, res) => {
   }
 };
 
+const setNewCategoryController = async (req, res) => {
+  try {
+    const { name } = req.body;
+
+    const category = await categoriesService.setNewCategory(name);
+
+    return res.status(201).json(category);
+  } catch (error) {
+    return res.status(500).json(error.message);
+  }
+};
+
 module.exports = {
   getAllCategoriesController,
+  setNewCategoryController,
 };
