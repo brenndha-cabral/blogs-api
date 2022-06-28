@@ -14,6 +14,15 @@ const validateFieldsNewPost = [
     .withMessage('Categorias inválidas. Por favor, insira um array de categorias válidas.'),
 ];
 
+const validateFieldsUpdate = [
+  check('title')
+    .isEmpty()
+    .withMessage('Título inválido. Por favor, insira um título válido.'),
+  check('content')
+    .isEmpty()
+    .withMessage('Conteúdo inválido. Por favor, insira um conteúdo válido.'),
+];
+
 const validateRulesPost = (req, res, next) => {
   const errors = validationResult(req);
 
@@ -45,6 +54,7 @@ const validateExistCategoryIds = async (req, res, next) => {
 
 module.exports = {
   validateFieldsNewPost,
+  validateFieldsUpdate,
   validateRulesPost,
   validateExistCategoryIds,
 };
