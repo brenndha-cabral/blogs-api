@@ -30,7 +30,30 @@ const getPostByIdController = async (req, res) => {
   }
 };
 
+const getPostByQueryController = async (req, res) => {
+  try {
+    const { q } = req.query;
+
+    const posts = await postService.getAllPosts();
+
+    if (!q) {
+      return res.status(200).json(posts);
+    }
+
+    const post = await postService.getPostByQuery(q);
+
+    if (!post) {
+      return res.status(200).json([]);
+    }
+
+    return res.status(200).json(post);
+  } catch (error) {
+    return res.status(500).json(error.message);
+  }
+};
+
 module.exports = {
   getAllPostController,
   getPostByIdController,
+  getPostByQueryController,
 };
