@@ -1,5 +1,16 @@
 const { Op } = require('sequelize');
-const { BlogPost, Category, User } = require('../database/models');
+const Sequelize = require('sequelize');
+const config = require('../database/config/config');
+const { authenticateToken } = require('../utils/jwt');
+
+const sequelize = new Sequelize(config.development);
+
+const {
+  BlogPost,
+  Category,
+  User,
+  PostCategory,
+} = require('../database/models');
 
 const getAllPosts = async () => {
   const response = await BlogPost.findAll({
@@ -43,8 +54,32 @@ const getPostByQuery = async (newQuery) => {
   return response;
 };
 
+const newPostWithCategories = async ({ title, content, categoryIds }, userToken) => {
+  const { id } = authenticateToken(userToken);
+
+  const userId = id;
+
+  const response = await sequelize.transaction(async (t) => {
+    const post = await BlogPost
+      .create(
+        { title, content, userId },
+        { transaction: t },
+      );
+
+    await Promise.all(categoryIds
+      .map((category) => PostCategory.create(
+        { postId: post.id, categoryId: category },
+        { transaction: t },
+      )));
+
+    return post;
+  });
+  return response;
+};
+
 module.exports = {
   getAllPosts,
   getPostById,
   getPostByQuery,
+  newPostWithCategories,
 };
