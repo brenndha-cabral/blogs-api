@@ -77,9 +77,19 @@ const newPostWithCategories = async ({ title, content, categoryIds }, userToken)
   return response;
 };
 
+const updatePostById = async (id, { title, content }) => {
+  const [response] = await BlogPost.update(
+    { title, content },
+    { through: { attributes: [] }, where: { id } },
+  );
+
+  return response > 0;
+};
+
 module.exports = {
   getAllPosts,
   getPostById,
   getPostByQuery,
   newPostWithCategories,
+  updatePostById,
 };
