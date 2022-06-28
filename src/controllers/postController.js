@@ -84,10 +84,26 @@ const updatePostByIdController = async (req, res) => {
   }
 };
 
+const removePostByIdController = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const deletePostId = await postService.removePostById(id);
+
+    if (!deletePostId) {
+      return res.status(401).json({ message: 'Erro ao deletar. Por favor, tente novamente' });
+    }
+    return res.status(204).json();
+  } catch (error) {
+    return res.status(500).json(error.message);
+  }
+};
+
 module.exports = {
   getAllPostController,
   getPostByIdController,
   getPostByQueryController,
   newPostController,
   updatePostByIdController,
+  removePostByIdController,
 };
