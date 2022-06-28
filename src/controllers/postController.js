@@ -65,9 +65,29 @@ const newPostController = async (req, res) => {
   }
 };
 
+const updatePostByIdController = async (req, res) => {
+  try {
+    const updatePost = req.body;
+    const { id } = req.params;
+
+    const updatePostId = await postService.updatePostById(id, updatePost);
+
+    if (!updatePostId) {
+      return res.status(401).json({ message: 'Erro ao atualizar. Por favor, tente novamente' });
+    }
+
+    const post = await postService.getPostById(id);
+
+    return res.status(200).json(post);
+  } catch (error) {
+    return res.status(500).json(error.message);
+  }
+};
+
 module.exports = {
   getAllPostController,
   getPostByIdController,
   getPostByQueryController,
   newPostController,
+  updatePostByIdController,
 };
