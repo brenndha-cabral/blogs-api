@@ -52,8 +52,22 @@ const getPostByQueryController = async (req, res) => {
   }
 };
 
+const newPostController = async (req, res) => {
+  try {
+    const newPost = req.body;
+    const userToken = req.headers.authorization;
+
+    const post = await postService.newPostWithCategories(newPost, userToken);
+
+    return res.status(201).json(post);
+  } catch (error) {
+    return res.status(500).json(error.message);
+  }
+};
+
 module.exports = {
   getAllPostController,
   getPostByIdController,
   getPostByQueryController,
+  newPostController,
 };
