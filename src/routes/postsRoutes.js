@@ -12,14 +12,14 @@ const { validateToken } = require('../middlewares/validateToken');
 const {
 //   newPostController,
   getAllPostController,
-//   getPostByIdController,
+  getPostByIdController,
 //   updatePostByIdController,
 //   removePostByIdController,
 //   getPostByQueryController,
 } = require('../controllers/postController');
 
 // router.get('/search', validateToken, getPostByQueryController);
-// router.get('/:id', validateToken, getPostByIdController);
+router.get('/:id', validateToken, getPostByIdController);
 router.get('/', validateToken, getAllPostController);
 // router.post('/', validateToken, validatePost, validateCategoryId, newPostController);
 // router.put('/:id', validateToken, validateUserPost, validateUpdatePost, updatePostByIdController);
